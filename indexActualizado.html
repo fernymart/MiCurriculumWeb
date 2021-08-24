@@ -4,6 +4,37 @@
     <title>
         Mi Curriculum - Fernando Martínez
     </title>
+    <style>
+        body{
+            background-color: rgb(146, 146, 146);
+        }
+        nav{
+            align-content: center;
+            background-color: #b9b9b9;
+            width: 100%; 
+            text-align: center;
+        }
+
+        .skills-container{
+            display: flex;
+        }
+
+        .skills{
+            border: rgb(0, 0, 0); 
+            border-style: dashed;
+            border-radius: 10px;
+            margin: 5px;
+            width: 50%;
+            padding: 20px;
+        }
+
+        #Battleships{
+            color: rgb(241, 227, 93);
+        }
+        
+    </style>
+
+
 </head>
 <header>
     <img src="feli.jpg" alt="feli" style="display: block; margin-left: auto; margin-right: auto;">
@@ -15,7 +46,7 @@
         <a href="https://github.com/fernymart" target="_blank">My github profile</a>
     </address>
 
-    <nav style="width: 100%; text-align: center;">
+    <nav>
         <a href="#work">Work Experience</a> ||
         <a href="#projects">Projects</a> ||
         <a href="#skills">Skills</a>
@@ -35,7 +66,7 @@
             Projects
         </h2>
         <h3>Simplified Battleships game</h3>
-        <p>Simplified version of the widely popular <span style="color: cornflowerblue;">Battleships</span> game made with python. <a href="https://github.com/fernymart/miniBattleShips">This</a> project was made to teach basic programming to a student.</p>
+        <p>Simplified version of the widely popular <span id="Battleships">Battleships</span> game made with python. <a href="https://github.com/fernymart/miniBattleShips">This</a> project was made to teach basic programming to a student.</p>
         <h3>Teamder</h3>
         <p>Web system designed to simplify team creation for students in school projects. Backend made with Django.</p>
     </section>
@@ -44,26 +75,28 @@
         <h2 id="skills">
             Skills
         </h2>
-        <div style="border: darkgrey; border-style: groove;">
-            <h3>Proficient</h3>
-            <ul>
-                <li>C/C++</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>HTML/CSS</li>
-                <li>Linux</li>
-                <li>Bash</li>
-                <li>Git</li>
-            </ul>
-        </div>
-        <div style="border: darkgrey; border-style: groove;">
-            <h3>Beginner</h3>
-            <ul>
-                <li>Javascript</li>
-                <li>Django</li>
-                <li>PowerShell</li>
-                <li>MacOS</li>
-            </ul>
+        <div class="skills-container">
+            <div class="skills">
+                <h3>Proficient</h3>
+                <ul>
+                    <li>C/C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>Linux</li>
+                    <li>Bash</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Beginner</h3>
+                <ul>
+                    <li>Javascript</li>
+                    <li>Django</li>
+                    <li>PowerShell</li>
+                    <li>MacOS</li>
+                </ul>
+            </div>
         </div>
     </section>
 
